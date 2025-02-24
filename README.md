@@ -16,7 +16,7 @@ datamappers for some of the other entities in the database.
 ### Get started
 
 1) Begin by cloning the project
-2) After cloning, remove the .git folder by typing `rm -rf .git`.
+2) After cloning, you can remove the .git folder by typing `rm -rf .git`. 
 3) Open the project in IntelliJ
 4) Create the database 'sportsclub' in Postgres via pgAdmin
 5) Open the file "src/main/resources/sportsclub.sql" in pgAdmin and execute it to create the sportsclub tables and fill them with data.
