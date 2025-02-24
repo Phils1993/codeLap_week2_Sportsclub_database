@@ -23,6 +23,7 @@ datamappers for some of the other entities in the database.
 6) Update the login credentials in the Main class to reflect your local system
 7) Run it and get to know the code.
 
+After completing the following tasks, you should test them from your main-method. 
 ### Add some nice queries
 
 Add some of these methods to the MemberMapper class. As many as you can, and begin
@@ -46,8 +47,15 @@ Hint: It might be useful to create a view with lots of joins
 15) Add a new method to the RegistrationMapper called getAllRegistrations() that returns an arraylist of registrations.
 16) You might want to pimp the getAllRegistrations so that you can print out more
     than just the (member_id, team_id) data. It would be lovely with a list of member names
-    and team name etc. Use you imagination.
+    and team name etc.
 
-### The EER diagram
+### Add som DTO-classes and methods
+17) Add a new package called dto
+18) In your dto package add a new class called "MemberAndSportsDTO". The class should have an attribute called member and an attribute called sports. The latter is a list of sports that the member plays
+19) Add construcktor and getter/setters to your class
+20) Make a method getMemberAndSportsById(int id) to your MemberMapper
+21) The method should return a MemberAndSportsDTO with a member and a list of the sports that the member plays
+
+### The ER diagram
 
 ![](src/main/resources/sportsclub.png)
