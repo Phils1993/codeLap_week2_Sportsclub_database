@@ -14,7 +14,7 @@ public class Main {
 
     private final static String USER = "postgres";
     private final static String PASSWORD = "postgres";
-    private final static String URL = "jdbc:postgresql://localhost:5432/sportsclub?currentSchema=public";
+    private final static String URL = "jdbc:postgresql://localhost:5432/sportsclub_Phils?currentSchema=public";
 
     public static void main(String[] args) throws DatabaseException, SQLException {
 
@@ -47,6 +47,7 @@ public class Main {
 
        // registrationMapper.addToTeam(new Registration(10,"gym01",200));
         // task 13 + 14 + 15 + 16
+        //registrationMapper.addToTeam(new Registration(50,"gym01",180));
         registrationMapper.getAllRegistations().forEach(System.out::println);
 
 
